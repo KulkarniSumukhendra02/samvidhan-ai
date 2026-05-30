@@ -2,43 +2,49 @@ import Link from "next/link";
 
 export default function LearnRights() {
   const rights = [
-    {
-      title: "Right to Equality",
-      articles: "Articles 14 - 18",
-      description:
-        "Ensures equality before law and prohibits discrimination based on religion, caste, gender, or place of birth.",
-    },
-    {
-      title: "Right to Freedom",
-      articles: "Articles 19 - 22",
-      description:
-        "Provides freedom of speech, expression, movement, residence, and protection of personal liberty.",
-    },
-    {
-      title: "Right Against Exploitation",
-      articles: "Articles 23 - 24",
-      description:
-        "Prohibits human trafficking, forced labor, and child labor in hazardous environments.",
-    },
-    {
-      title: "Right to Freedom of Religion",
-      articles: "Articles 25 - 28",
-      description:
-        "Allows every citizen to freely practice, profess, and propagate religion.",
-    },
-    {
-      title: "Cultural & Educational Rights",
-      articles: "Articles 29 - 30",
-      description:
-        "Protects the cultural and educational rights of minorities in India.",
-    },
-    {
-      title: "Right to Constitutional Remedies",
-      articles: "Article 32",
-      description:
-        "Allows citizens to approach the Supreme Court for protection of fundamental rights.",
-    },
-  ];
+  {
+    slug: "right-to-equality",
+    title: "Right to Equality",
+    articles: "Articles 14 - 18",
+    description:
+      "Ensures equality before law and prohibits discrimination based on religion, caste, gender, or place of birth.",
+  },
+  {
+    slug: "right-to-freedom",
+    title: "Right to Freedom",
+    articles: "Articles 19 - 22",
+    description:
+      "Provides freedom of speech, expression, movement, residence, and protection of personal liberty.",
+  },
+  {
+    slug: "right-against-exploitation",
+    title: "Right Against Exploitation",
+    articles: "Articles 23 - 24",
+    description:
+      "Prohibits human trafficking, forced labor, and child labor in hazardous environments.",
+  },
+  {
+    slug: "freedom-of-religion",
+    title: "Right to Freedom of Religion",
+    articles: "Articles 25 - 28",
+    description:
+      "Allows every citizen to freely practice, profess, and propagate religion.",
+  },
+  {
+    slug: "cultural-and-educational-rights",
+    title: "Cultural & Educational Rights",
+    articles: "Articles 29 - 30",
+    description:
+      "Protects the cultural and educational rights of minorities in India.",
+  },
+  {
+    slug: "constitutional-remedies",
+    title: "Right to Constitutional Remedies",
+    articles: "Article 32",
+    description:
+      "Allows citizens to approach the Supreme Court for protection of fundamental rights.",
+  },
+];
 
   return (
     <main className="min-h-screen bg-[#E8DFC9] text-[#111827]">
@@ -99,39 +105,47 @@ export default function LearnRights() {
 
       </section>
 
-      {/* Rights Cards */}
-      <section className="max-w-7xl mx-auto px-6 pb-24">
+    {/* Rights Cards */}
+<section className="max-w-7xl mx-auto px-6 pb-24">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          {rights.map((right, index) => (
-            <div
-              key={index}
-              className="bg-[#F8F5EE] border border-[#D6CFC2] rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-            >
+    {rights.map((right, index) => (
 
-              <p className="text-sm font-semibold text-[#7F1D1D] mb-3">
-                {right.articles}
-              </p>
+      <Link
+        key={index}
+        href={`/learn-rights/${right.slug}`}
+      >
 
-              <h3 className="text-2xl font-bold text-[#0F172A] mb-4">
-                {right.title}
-              </h3>
+        <div className="bg-[#F8F5EE] border border-[#D6CFC2] rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
 
-              <p className="text-gray-600 leading-7">
-                {right.description}
-              </p>
+          <p className="text-sm font-semibold text-[#7F1D1D] mb-3">
+            {right.articles}
+          </p>
 
-              <button className="mt-6 px-5 py-3 bg-[#7F1D1D] text-white rounded-xl hover:bg-[#991B1B] transition duration-300">
-                Learn More
-              </button>
+          <h3 className="text-2xl font-bold text-[#0F172A] mb-4">
+            {right.title}
+          </h3>
 
-            </div>
-          ))}
+          <p className="text-gray-600 leading-7">
+            {right.description}
+          </p>
+
+          <button className="mt-6 px-5 py-3 bg-[#7F1D1D] text-white rounded-xl hover:bg-[#991B1B] transition duration-300">
+
+            Learn More
+
+          </button>
 
         </div>
 
-      </section>
+      </Link>
+
+    ))}
+
+  </div>
+
+</section>
 
       {/* Footer */}
       <footer className="bg-[#0F172A] text-white py-12 px-6 md:px-10">
