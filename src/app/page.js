@@ -37,7 +37,9 @@ export default function Home() {
           >
             Permissions & Procedures
           </Link>
-
+<Link href="/quiz">
+  Quiz Hub
+</Link>
           <Link
             href="/ai-assistant"
             className="hover:text-white transition-colors duration-200"
@@ -227,112 +229,193 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
 
           {/* Card 1 */}
-          <div className="bg-[#F8F5EE] rounded-2xl border border-[#D6CFC2] p-6 shadow-sm hover:shadow-lg transition duration-300">
+<div className="bg-[#F8F5EE] rounded-2xl border border-[#D6CFC2] p-6 shadow-sm hover:shadow-lg transition duration-300">
+  <h3 className="font-bold text-lg text-[#0F172A]">
+    Fundamental Rights
+  </h3>
 
-            <h3 className="font-bold text-lg text-[#0F172A]">
-              Reliable & Accurate
-            </h3>
+  <p className="mt-3 text-sm text-[#6B7280] leading-6">
+    Explore constitutional rights with simplified explanations and article references.
+  </p>
+</div>
 
-            <p className="mt-3 text-sm text-[#6B7280] leading-6">
-              Constitutional awareness based on trusted public legal resources.
-            </p>
+{/* Card 2 */}
+<div className="bg-[#F8F5EE] rounded-2xl border border-[#D6CFC2] p-6 shadow-sm hover:shadow-lg transition duration-300">
+  <h3 className="font-bold text-lg text-[#0F172A]">
+    Government Procedures
+  </h3>
 
-          </div>
+  <p className="mt-3 text-sm text-[#6B7280] leading-6">
+    Understand registrations, certificates, permissions, and public services.
+  </p>
+</div>
 
-          {/* Card 2 */}
-          <div className="bg-[#F8F5EE] rounded-2xl border border-[#D6CFC2] p-6 shadow-sm hover:shadow-lg transition duration-300">
+{/* Card 3 */}
+<div className="bg-[#F8F5EE] rounded-2xl border border-[#D6CFC2] p-6 shadow-sm hover:shadow-lg transition duration-300">
+  <h3 className="font-bold text-lg text-[#0F172A]">
+    AI Civic Assistant
+  </h3>
 
-            <h3 className="font-bold text-lg text-[#0F172A]">
-              Simple Language
-            </h3>
+  <p className="mt-3 text-sm text-[#6B7280] leading-6">
+    Ask questions in simple language and receive constitutional guidance.
+  </p>
+</div>
 
-            <p className="mt-3 text-sm text-[#6B7280] leading-6">
-              Complex constitutional topics explained in easy-to-understand language.
-            </p>
+{/* Card 4 */}
+<div className="bg-[#F8F5EE] rounded-2xl border border-[#D6CFC2] p-6 shadow-sm hover:shadow-lg transition duration-300">
+  <h3 className="font-bold text-lg text-[#0F172A]">
+    Interactive Learning
+  </h3>
 
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-[#F8F5EE] rounded-2xl border border-[#D6CFC2] p-6 shadow-sm hover:shadow-lg transition duration-300">
-
-            <h3 className="font-bold text-lg text-[#0F172A]">
-              For Every Citizen
-            </h3>
-
-            <p className="mt-3 text-sm text-[#6B7280] leading-6">
-              Designed for students, professionals, and everyday citizens.
-            </p>
-
-          </div>
-
-          {/* Card 4 */}
-          <div className="bg-[#F8F5EE] rounded-2xl border border-[#D6CFC2] p-6 shadow-sm hover:shadow-lg transition duration-300">
-
-            <h3 className="font-bold text-lg text-[#0F172A]">
-              Privacy Focused
-            </h3>
-
-            <p className="mt-3 text-sm text-[#6B7280] leading-6">
-              Awareness guidance with secure and privacy-focused interactions.
-            </p>
-
-          </div>
+  <p className="mt-3 text-sm text-[#6B7280] leading-6">
+    Learn through structured modules, examples, and quizzes.
+  </p>
+</div>
 
         </div>
 
       </section>
+      {/* How Samvidhan AI Works */}
+<section className="max-w-7xl mx-auto px-6 md:px-10 py-20">
+
+  <div className="text-center">
+
+    <h2 className="text-4xl md:text-5xl font-bold text-[#0F172A]">
+      How Samvidhan AI Works
+    </h2>
+
+    <p className="mt-4 text-lg text-[#6B7280] max-w-3xl mx-auto">
+      Learn your constitutional rights, understand government procedures,
+      and receive civic awareness guidance through an AI-powered platform.
+    </p>
+
+  </div>
+
+  <div className="grid md:grid-cols-4 gap-8 mt-16">
+
+    {/* Step 1 */}
+    <div className="bg-[#F8F5EE] rounded-3xl p-8 border border-[#D6CFC2] text-center shadow-sm hover:shadow-lg transition">
+
+      <div className="w-14 h-14 mx-auto rounded-full bg-[#7F1D1D] text-white flex items-center justify-center text-xl font-bold">
+        1
+      </div>
+
+      <h3 className="mt-6 text-xl font-bold text-[#0F172A]">
+        Learn Rights
+      </h3>
+
+      <p className="mt-3 text-[#6B7280] leading-7">
+        Explore Fundamental Rights and constitutional protections in simple language.
+      </p>
+
+    </div>
+
+    {/* Step 2 */}
+    <div className="bg-[#F8F5EE] rounded-3xl p-8 border border-[#D6CFC2] text-center shadow-sm hover:shadow-lg transition">
+
+      <div className="w-14 h-14 mx-auto rounded-full bg-[#7F1D1D] text-white flex items-center justify-center text-xl font-bold">
+        2
+      </div>
+
+      <h3 className="mt-6 text-xl font-bold text-[#0F172A]">
+        Explore Procedures
+      </h3>
+
+      <p className="mt-3 text-[#6B7280] leading-7">
+        Understand registrations, permissions, certificates, and government services.
+      </p>
+
+    </div>
+
+    {/* Step 3 */}
+    <div className="bg-[#F8F5EE] rounded-3xl p-8 border border-[#D6CFC2] text-center shadow-sm hover:shadow-lg transition">
+
+      <div className="w-14 h-14 mx-auto rounded-full bg-[#7F1D1D] text-white flex items-center justify-center text-xl font-bold">
+        3
+      </div>
+
+      <h3 className="mt-6 text-xl font-bold text-[#0F172A]">
+        Ask AI Assistant
+      </h3>
+
+      <p className="mt-3 text-[#6B7280] leading-7">
+        Get constitutional guidance and simplified explanations through AI.
+      </p>
+
+    </div>
+
+    {/* Step 4 */}
+    <div className="bg-[#F8F5EE] rounded-3xl p-8 border border-[#D6CFC2] text-center shadow-sm hover:shadow-lg transition">
+
+      <div className="w-14 h-14 mx-auto rounded-full bg-[#7F1D1D] text-white flex items-center justify-center text-xl font-bold">
+        4
+      </div>
+
+      <h3 className="mt-6 text-xl font-bold text-[#0F172A]">
+        Improve Awareness
+      </h3>
+
+      <p className="mt-3 text-[#6B7280] leading-7">
+        Build civic knowledge and become a more informed citizen.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* Stats Section */}
-      <section className="bg-[#0F172A] text-white py-10">
+<section className="bg-[#0F172A] text-white py-10">
 
-        <div className="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+  <div className="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
 
-          <div>
-            <h3 className="text-3xl font-bold text-[#E8DFC9]">
-              10K+
-            </h3>
+    <div>
+      <h3 className="text-3xl font-bold text-[#E8DFC9]">
+        6
+      </h3>
 
-            <p className="mt-2 text-sm text-gray-300">
-              Citizens Empowered
-            </p>
-          </div>
+      <p className="mt-2 text-sm text-gray-300">
+        Fundamental Rights
+      </p>
+    </div>
 
-          <div>
-            <h3 className="text-3xl font-bold text-[#E8DFC9]">
-              500+
-            </h3>
+    <div>
+      <h3 className="text-3xl font-bold text-[#E8DFC9]">
+        50+
+      </h3>
 
-            <p className="mt-2 text-sm text-gray-300">
-              Rights Explained
-            </p>
-          </div>
+      <p className="mt-2 text-sm text-gray-300">
+        Constitutional Articles
+      </p>
+    </div>
 
-          <div>
-            <h3 className="text-3xl font-bold text-[#E8DFC9]">
-              300+
-            </h3>
+    <div>
+      <h3 className="text-3xl font-bold text-[#E8DFC9]">
+        100+
+      </h3>
 
-            <p className="mt-2 text-sm text-gray-300">
-              Procedures Simplified
-            </p>
-          </div>
+      <p className="mt-2 text-sm text-gray-300">
+        Procedures Explained
+      </p>
+    </div>
 
-          <div>
-            <h3 className="text-3xl font-bold text-[#E8DFC9]">
-              100%
-            </h3>
+    <div>
+      <h3 className="text-3xl font-bold text-[#E8DFC9]">
+        24/7
+      </h3>
 
-            <p className="mt-2 text-sm text-gray-300">
-              Privacy Focused
-            </p>
-          </div>
+      <p className="mt-2 text-sm text-gray-300">
+        AI-Powered Learning
+      </p>
+    </div>
 
-        </div>
+  </div>
 
-      </section>
+</section>
 
       {/* Footer */}
-      <footer className="bg-[#111827] text-white py-12 px-6 md:px-10">
+      <footer className="bg-[#111827] text-white py-8 px-6 md:px-10">
 
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
 
@@ -370,7 +453,7 @@ export default function Home() {
 
         </div>
 
-        <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500 text-sm">
+        <div className="border-t border-gray-700 mt-6 pt-4 text-center">
 
           © 2026 Samvidhan AI. All rights reserved.
 
